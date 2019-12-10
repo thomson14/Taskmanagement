@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Activity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Location:"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/demo_location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Type:"
+            android:layout_toRightOf="@+id/demo_location"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/demo_type"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_location"
+            android:layout_below="@+id/demo_location"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:id="@+id/activity_site_type"
+            android:layout_below="@+id/demo_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Session Time:"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/demo_pick_session"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinner_location"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="start"
+            android:layout_below="@+id/demo_pick_session"
+            android:id="@+id/demo_start_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="Start"
+            android:layout_below="@+id/demo_pick_session"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demo_end_btn"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp"
+            android:text="end"
+            android:layout_below="@+id/demo_pick_session"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_btn"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
+            android:text="End"
+            android:layout_below="@+id/demo_pick_session"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_margin="30dp"
+            android:hint="Description"
+            android:layout_below="@id/demo_start_btn"
+            android:id="@+id/activity_site_description"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:text="cancel"
+            android:id="@+id/btn_activity_cancel"
+            android:layout_below="@id/activity_site_description"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:layout_marginLeft="270dp"
+            android:id="@+id/btn_activity_update"
+            android:layout_below="@id/activity_site_description"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

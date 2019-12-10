@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        />
+
+  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/demo_Expense_type"
+            android:text="Expense Type:"
+            android:textSize="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/demo_SIte_Type"
+            android:text="Site"
+            android:textSize="10dp"
+          
+
+            />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/expense_type_spinner"
+            
+            />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/site_type_spinner"
+
+          
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_date_expense"
+            android:text="Date"
+            android:layout_weight=".3"
+            android:layout_below="@+id/expense_type_spinner"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:layout_weight=".3"
+
+            android:id="@+id/demo_price"
+            android:layout_below="@+id/expense_type_spinner"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:id="@+id/date_expense"
+           android:layout_weight=".3"
+
+           android:layout_below="@id/expense_type_spinner"
+            android:text="Date"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/expense_price"
+
+            android:layout_weight=".3"
+            android:layout_below="@id/demo_price"
+            android:hint="price"/>
+
+    </LinearLayout>
+
+   
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/expense_discription"
+        android:layout_margin="20dp"
+       
+        android:layout_height="150dp"
+        android:hint="Expense Description"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_ex"
+        android:layout_weight=".3"
+        android:text="update"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancer_ex"
+        android:layout_weight=".3"
+        android:layout_below="@+id/expense_discription"
+        android:text="Cancer"/>
+    </LinearLayout>
+
+
+   
+
+</LinearLayout>
